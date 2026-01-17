@@ -1,0 +1,16 @@
+import java.util.Scanner;
+ 
+public class test {
+    public static void main(String[] args) {
+      
+        Scanner in = new Scanner(System.in);
+        int length = in.nextInt();
+        int breadth = in.nextInt();
+ 
+        int area = length * breadth;
+        int perimeter = 2 * (length + breadth);
+ 
+        System.out.println(String.format("Area = %d", area));
+        System.out.println(String.format("Perimeter = %d", perimeter));
+    }
+}
