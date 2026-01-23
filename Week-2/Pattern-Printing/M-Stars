@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int row = in.nextInt();
+        int col = in.nextInt();
+        solve(row, col);
+    }
+    public static void solve(int row, int col) {
+        for(int a=1; a<=row; a++) {
+            for(int b=1; b<=col; b++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
