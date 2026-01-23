@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        int n = in.nextInt();
+        solve(n);
+    }
+    public static void solve(int n) {
+        for(int row=1; row<=n; row++) {
+            System.out.println("**");
+        }
+    }
+}
