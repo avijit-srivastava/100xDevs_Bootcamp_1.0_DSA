@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+            solve();
+        }
+    }
+    public static void solve() {
+        for(char ch='A'; ch<='Z'; ch++) {
+            System.out.print(ch + " ");
+        }
+    }
+}
