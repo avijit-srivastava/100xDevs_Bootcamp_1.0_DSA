@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+           int x = in.nextInt();
+           long n = in.nextLong();
+
+           long ans = solve(x, n);
+           System.out.println(ans);
+        }
+    }
+    public static long solve(int x, long n) {
+        if(n == 0) {
+            return 1;
+        }
+        long prod = 1;
+        for(int i=1; i<=n; i++) {
+            prod = prod * x;
+        }
+        return prod;
+    }
+}
