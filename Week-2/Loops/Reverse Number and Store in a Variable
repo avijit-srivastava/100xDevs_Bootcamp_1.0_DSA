@@ -1,0 +1,19 @@
+import java.util.Scanner;
+ 
+public class test {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+           long n = in.nextLong();
+           long ans = solve(n);
+           System.out.println(ans);
+        }
+    }
+    public static long solve(long n) {
+        long rev_num = 0;
+        while(n != 0) {
+            rev_num = rev_num * 10 + (n%10);
+            n = n / 10;
+        }
+        return rev_num;
+    }
+}
