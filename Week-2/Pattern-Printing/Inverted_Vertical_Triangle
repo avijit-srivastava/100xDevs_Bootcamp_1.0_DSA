@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class test {
+    public static void main(String[] args) {
+        try (Scanner in = new Scanner(System.in)) {
+           int n = in.nextInt();
+           solve(n);
+        }
+    }
+    public static void solve(int n) {
+        for(int row=1; row<=n; row++) {
+            for(int col=1; col<=((2*row)-1); col++) {
+                if(col == 1 || col == ((2*row)-1))
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+        n = n - 1;
+        for(int row=1; row<=n; row++) {
+            for(int col=1; col<=(2*(n-row)+1); col++) {
+                if(col == 1 || col == (2*(n-row)+1))
+                    System.out.print("*");
+                else
+                    System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+}
